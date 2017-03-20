@@ -1,2 +1,3 @@
 # KFernando26.github.io
-My weather app
+
+Must enable unsafe scripts to use weather app
