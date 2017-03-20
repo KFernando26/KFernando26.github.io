@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Weather App">
+    <meta name="author" content="">
+
+    <title>Weather App</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <section id="intro" class="intro-section">
+        <div class="container">
+
+            <div class="row">
+                <div id="citydiv" class="col-lg-12">
+                    <h1>Weather Forecast</h1>
+                </div>
+                <div class="col-lg-12 row form-group form-inline">
+                    <input type="text" name="city" id="city" class="form-control" placeholder="Enter city name">
+                    <button id="submitForecast" class="btn btn-primary">Get Weather</button>
+                </div>
+                <div id="error" class="col-lg-12">
+                </div>
+            </div>
+
+            <div class="row table-responsive">
+                <table class="table table-bordered">
+                    <div id="header" class="text-center">
+                    </div>
+                        <thead>
+                            <tr>
+                                <th>Weather</th>
+                                <th>Temperature</th>
+                                <th>Min. Temperature</th>
+                                <th>Max. Temperature</th>
+                                <th>Humidity</th>
+                            </tr>
+                        </thead>
+                    <tbody id="forecastWeather">
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Weather API Javascript -->
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
