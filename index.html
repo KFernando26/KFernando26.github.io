@@ -1,75 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-
-    <meta charset="utf-8">
+	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Weather App">
-    <meta name="author" content="">
+	
+	<title>Tupple AI</title>
+	<meta name="author" content="" />
+	<meta name="description" content="The social app where we create together." />
+	<meta name="keywords"  content="Tupple, Social network, app, social, photos, video" />
+	<meta name="Resource-type" content="Document" />
 
-    <title>Weather App</title>
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@tupple_app"/>
+	<meta name="twitter:title" content="Tupple"/>
+	<meta name="twitter:description" content="The social app where we create together." />
+	<meta name="twitter:image" content="imgs/TwitterImg.png" />
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="imgs/TuppleFav.png"/>
+	<link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/main.css" rel="stylesheet">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-73PBGMW1TV"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
+	  gtag('config', 'G-73PBGMW1TV');
+	</script>
 </head>
-
 
 <body>
 
-    <section id="intro" class="intro-section">
-        <div class="container">
-
-            <div class="row">
-                <div id="citydiv" class="col-lg-12">
-                    <h1>Weather Forecast</h1>
-                </div>
-                <div class="col-lg-12 row form-group form-inline">
-                    <input type="text" name="city" id="city" class="form-control" placeholder="Enter city name">
-                    <button id="submitForecast" class="btn btn-primary">Get Weather</button>
-                </div>
-                <div id="error" class="col-lg-12">
-                </div>
-            </div>
-
-            <div class="row table-responsive">
-                <table class="table table-bordered">
-                    <div id="header" class="text-center">
-                    </div>
-                        <thead>
-                            <tr>
-                                <th>Weather</th>
-                                <th>Temperature</th>
-                                <th>Min. Temperature</th>
-                                <th>Max. Temperature</th>
-                                <th>Humidity</th>
-                            </tr>
-                        </thead>
-                    <tbody id="forecastWeather">
-                    </tbody>
-                </table>
-            </div>
-
+	<nav class="navbar navbar-fixed-top">
+        <div class="container-fluid hidden-sm hidden-md hidden-lg">
+        <a href="https://tupple.ai"><img src="imgs/TuppleLogo.png" id="mainLogo"></a>
         </div>
-    </section>
+        <div class="container-fluid hidden-xs">
+        <a href="https://tupple.ai"><img src="imgs/TuppleTitle.svg" id="mainLogo"></a>
+        </div>
+    </nav>
+
+<div id="fullpage">
+
+		<div class="section wow fadeIn">
+	            <div class="col-sm-12 ">
+	                <h1 style="text-align: center; margin-top: 280px;">Coming soon.</h1>
+	            </div>
+	    </div>
+</div>
 
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="examples.js"></script>
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 
-    <!-- Weather API Javascript -->
-    <script src="js/main.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: ['#fff', '#fff', '#fff'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Your AI', 'Better together', 'My Zine', 'Tupple, Inc.'],
+        responsiveWidth: false,
+        afterResponsive: function(isResponsive){
 
+        }
+
+    });
+</script>
 
 </body>
-
 </html>
